@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitShow", "GitShow\GitShow.csproj", "{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitShow", "GitShow\GitShow.csproj", "{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17bang", "17bang\17bang.csproj", "{BD559307-B2A0-4017-B3BC-CBF7543ACC4F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD559307-B2A0-4017-B3BC-CBF7543ACC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD559307-B2A0-4017-B3BC-CBF7543ACC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD559307-B2A0-4017-B3BC-CBF7543ACC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD559307-B2A0-4017-B3BC-CBF7543ACC4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
