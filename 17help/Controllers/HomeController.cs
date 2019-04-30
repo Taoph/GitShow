@@ -14,6 +14,11 @@ namespace _17help.Controllers
         {
             return View();
         }
+
+        public IActionResult LogOn()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

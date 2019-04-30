@@ -3,14 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/ico" href="~/Image/logo.ico" />
-    <title>注册·一起帮</title>
+    <title>@ViewBag.title·一起帮</title>
     <style type="text/css">
-        #right {
+        .right {
             float: right;
+            width:660px;
+            margin-right:50px;
         }
 
-        #left {
+        .left {
             float: left;
+        }
+        
+        input[type="text"]{
+            width:220px;
+            height:20px;
         }
     </style>
 </head>
@@ -20,19 +27,31 @@
         <span><b>一起帮</b></span>
         <span>· 网络互助平台</span>
     </div>
-    <div>
-        <ul>
-            <li>
-                <select>
-                    <option>求助</option>
-                    <option>疑问发布</option>
-                    <option>疑问列表</option>
-                    <option>列表</option>
-                    <option>发布</option>
-                </select>
-            </li>
-        </ul>
-    </div>
+    <!-- <div>
+         <ul>
+             <li>
+                 求助
+                 <select>
+         <option>求助</option>
+         <option><a>疑问发布</a></option>
+         <option><a>疑问列表</a></option>
+         <option><a>列表</a></option>
+         <option><a>发布</a></option>
+     </select>
+    </li>
+    <li>
+        督促
+        <select>
+            <option><a>求督促</a></option>
+            <option><a>督促别人</a></option>
+            <option><a>我的目标</a></option>
+            <option><a>我的督促</a></option>
+            <option><a>未交作业</a></option>
+            <option><a>交作业</a></option>
+        </select>
+    </li>
+    </ul>
+    </div>-->
     @RenderBody()
 </body>
 </html>

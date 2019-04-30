@@ -1,10 +1,11 @@
 ﻿
 @{
     Layout = "_Layout";
+    ViewData["title"] = "注册";
 }
 
-
-    <div id="left">
+    <h4>注册</h4>
+    <div class="left">
         <form method="post" action="#">
             <p>
                 <label for="Inviter">邀请人：</label><br />
@@ -16,29 +17,26 @@
             </p>
             <p>
                 <label for="name">用户名：（* 必填）</label> <br />
-                <input type="text" id="name" placeholder="* 邀请码只能是4位数字" value="" />
+                <input type="text" id="name" placeholder="登录用户名，可修改，不能重复" value="" />
             </p>
             <p>
                 <label for="password">密码：（* 必填）</label> <br />
-                <input type="text" id="password" placeholder="* 邀请码只能是4位数字" value="" />
+                <input type="text" id="password" placeholder="不少于4位" value="" />
             </p>
             <p>
                 <label for="confirmPassword">验证密码：（* 必填）</label> <br />
-                <input type="text" id="confirmPassword" placeholder="* 邀请码只能是4位数字" value="" />
+                <input type="text" id="confirmPassword" placeholder="不少于4位" value="" />
             </p>
             <p>
                 <label for="confirmCode">验证码：（* 必填）</label> <br />
-                <input type="text" id="confirmCode" placeholder="* 邀请码只能是4位数字" value="" />
-            </p>
-            <p>
-                <input type="text" value="" style="width:80px;height:28px" />
+                <input type="text" id="confirmCode" value="" style="width:80px;height:28px" />
                 <span>点击输入框显示</span><br />
             </p>
             <button type="submit">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;
             <button type="reset">重置</button>
         </form>
     </div>
-    <div id="right">
+    <div class="right">
         <h4>说明</h4>
         <ol>
             <li>我们希望通过一起帮，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
