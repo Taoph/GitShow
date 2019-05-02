@@ -10,6 +10,12 @@ namespace _17help.Controllers
 {
     public class HomeController : Controller
     {
+        
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         public IActionResult Register()
         {
             return View();
@@ -19,7 +25,8 @@ namespace _17help.Controllers
         {
             return View();
         }
-        public IActionResult Index()
+
+        public IActionResult Navbar()
         {
             return View();
         }
