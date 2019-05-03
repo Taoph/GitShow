@@ -26,21 +26,40 @@
             border: 0px;
             border-bottom: 1px solid;
             background-color: #e7e7e7;
+            padding:5px;
         }
+
+            .navbar li {
+                display: inline-block;
+                position: center;
+                top: 3%;
+                right: 60%;
+            }
         .content{
             margin:5px;
+           
         }
         .footer {
             position: absolute;
             top: 90%;
+        }
+        #hr{
+            width:100%;
         }
     </style>
 </head>
 <body>
     <div class="navbar">
         <img src="~/images/logo-big.ico" />
-        <span><b>一起帮</b></span>
-        <span>· 网络互助平台</span>
+        <b>一起帮</b>· 网络互助平台
+        <ul>
+            <li>求助</li>
+            <li>督促</li>
+            <li>文章</li>
+            <li>APP下载</li>
+            <li>未登录</li>
+            <li>后台</li>
+        </ul>
     </div>
     <!-- <div>
          <ul>
@@ -72,7 +91,7 @@
     </div>
 
     <div class="footer">
-        <hr />
+        <hr id="hr"/>
         <p>
             <a href="#">关于我们 |</a>
             <a href="#">常见问题 |</a>
