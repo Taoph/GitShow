@@ -28,16 +28,23 @@
             background-color: #e7e7e7;
             padding:5px;
         }
-
-            .navbar li {
-                display: inline-block;
-                position: center;
-                top: 3%;
-                right: 60%;
+            .navbar>ul>li {
+                float: left;
+                margin: 5px;
+                display:block;
             }
+            .navbar ul {
+                position: absolute;
+                top: 3%;
+                right: 20%;
+                
+            }
+        /*    .navbar li {
+                display: inline-block;
+                
+            }*/
         .content{
-            margin:5px;
-           
+            margin:5px;         
         }
         .footer {
             position: absolute;
@@ -46,6 +53,13 @@
         #hr{
             width:100%;
         }
+        .drop-down-content {
+            display: none;
+        }
+        .drop-down:hover .drop-down-content {
+            display: block;
+        }
+       
     </style>
 </head>
 <body>
@@ -53,7 +67,16 @@
         <img src="~/images/logo-big.ico" />
         <b>一起帮</b>· 网络互助平台
         <ul>
-            <li>求助</li>
+            <li class="drop-down">
+                <a  href="#">求助</a>
+                <ul class="drop-down-content">
+                    <li>督导班</li>
+                    <li>疑问发布</li>
+                    <li>疑问列表</li>
+                    <li>列表</li>
+                    <li>发布</li>
+                </ul>
+            </li>
             <li>督促</li>
             <li>文章</li>
             <li>APP下载</li>
