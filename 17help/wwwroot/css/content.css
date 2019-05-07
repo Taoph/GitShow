@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.content {
+    margin: 5px;
+    /* position: relative;
+    top: 100px;*/
+}
+    .content .right {
+        /*position:relative;
+    left:500px;
+    bottom:200px;*/
+     margin-left:500px;
+     line-height:25px;
+     height:600px;
+    }
+    .content .left {
+        /*position:relative;*/
+        float:left;
+        margin:5px;
+        padding:1em;
+       
+    }
+input[type="text"] {
+    width: 220px;
+    height: 20px;
+}    

@@ -1,0 +1,15 @@
+﻿
+
+.footer {
+    /*position: relative;
+    bottom:-200px;*/
+    clear:both;
+    margin:5px;
+}
+
+.footer p{
+    margin:2px;
+}
+#float-right{
+    float:right;
+}
