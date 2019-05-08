@@ -33,10 +33,11 @@
     .drop-down-content {
          display: none;
          position:absolute;
+         right:50px;
          
          
     }
 
-    .drop-down:hover .drop-down-content {
-        display: block;
-    }
+.drop-down:hover .drop-down-content {
+    display: block;
+}

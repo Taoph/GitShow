@@ -5,37 +5,9 @@
     <link rel="shortcut icon" type="image/ico" href="~/Image/logo.ico" />
     <title>@ViewBag.title·一起帮</title>
     <link href="~/css/navbar.css" rel="stylesheet" />
-    <style type="text/css">
-        .right {
-            float: right;
-            width:660px;
-            height:200px;
-            margin-right:50px;
-            
-        }
-
-        .left {
-            float: left;
-            margin-bottom: 5px;
-            padding:5px;
-        }
-        
-        input[type="text"]{
-            width:220px;
-            height:20px;
-        }
-       
-        .content{
-            margin:5px;
-         
-        }
-        .footer {
-          
-            position:relative;
-            top:250px;
-            margin:5px;
-        
-        }
+    <link href="~/css/content.css" rel="stylesheet" />
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <style type="text/css">                        
         #hr{
             width:100%;
         }
@@ -50,8 +22,7 @@
            padding:2px;
            background-color:rgb(51,122,183);
            list-style:none;
-       }
-       
+       }      
     </style>
 </head>
 <body>
@@ -86,7 +57,7 @@
         </ul>
     </div>
     <div class="footer">
-        <hr id="hr"/>
+        <hr id="hr" />
         <p>
             <a href="#">关于我们 |</a>
             <a href="#">常见问题 |</a>
@@ -95,6 +66,8 @@
             <a href="#">友情捐赠 |</a>
             <a href="#">融资2018 </a>
         </p>
+        <p>友情链接:</p>
+        <p id="float-right"><a href="http://www.miitbeian.gov.cn">渝ICP备18007191号（备案）</a>&copy; 2019 - 首顾科技</p>
     </div>
 
 </body>

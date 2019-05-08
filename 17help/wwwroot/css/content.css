@@ -10,9 +10,10 @@
         /*position:relative;
     left:500px;
     bottom:200px;*/
-     margin-left:500px;
+     margin-top:50px;
      line-height:25px;
      height:600px;
+     float:right;
     }
     .content .left {
         /*position:relative;*/
