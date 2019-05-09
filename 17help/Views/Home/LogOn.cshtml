@@ -4,26 +4,34 @@
     ViewData["Title"] = "LogOn";
 }
 
-<h2>用户登录</h2>
-<hr/>
+
+ <h2 class="page-header">用户登录</h2>
 <div class="left">
     <form method="post" action="#">
         <p>
             <label for="name">用户名：（* 必填）</label> <br />
-            <input type="text" id="name" placeholder="不是昵称，是登录用户名" value="" />
+            <input type="text" id="name" placeholder="  不是昵称，是登录用户名" value="" />
         </p>
         <p>
             <label for="password">密码：（* 必填）</label> <br />
-            <input type="text" id="password" placeholder="不少于4位" value="" />
+            <input type="text" id="password" placeholder="  不少于4位" value="" />
         </p>
         <p>
             <label for="confirmCode">验证码：（* 必填）</label> <br />
             <input type="text" id="confirmCode" value="" />
         </p>
+        <p>
+            <button type="submit">提交</button>
+            <label style="font-size:15px;margin:10px;"><input type="checkbox" />记住我</label>
+            <span class="forget">
+                <a href="#">(｡ŏ_ŏ) 忘了</a>
+                <a href="~/home/Register">注册</a>
+            </span>
+        </p>
     </form>
 </div>
 <div class="right">
-    <header>说 明</header>
+    <header style="font-size:20px;">说 明</header>
     <ol>
         <li>我们希望通过一起帮，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
         <li>现在互联网远程技术（比如QQ桌面共享）已经非常成熟，当我们再遇到上述问题，如果别人能直接远程给予帮助，岂不是好？</li>

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="shortcut icon" type="image/ico" href="~/Image/logo.ico" />
     <title>@ViewBag.title·一起帮</title>
     <link href="~/css/navbar.css" rel="stylesheet" />
@@ -22,28 +23,61 @@
            padding:2px;
            background-color:rgb(51,122,183);
            list-style:none;
-       }      
+       }
     </style>
 </head>
 <body>
     <div class="navbar">
-        <img src="~/images/logo-big.ico" />
-        <b>一起帮</b>· 网络互助平台
+        <span class="navbar-logo">
+            <img src="~/images/logo-big.ico" />
+        </span>
+        <span class="websit-name"><b>一起帮</b></span>
+        <span>· 网络互助平台</span>
         <ul>
             <li class="drop-down">
-                <a  href="#">求助</a>
+                <a href="#">求助</a>
                 <ul class="drop-down-content">
-                    <li>督导班</li>
+                    <li class="drop-down-header">督导班</li>
                     <li>疑问发布</li>
                     <li>疑问列表</li>
+                    <li class="divider"></li>
                     <li>列表</li>
                     <li>发布</li>
                 </ul>
             </li>
-            <li>督促</li>
-            <li>文章</li>
-            <li>APP下载</li>
-            <li>未登录</li>
+            <li class="drop-down">
+                <a href="#">督促</a>
+                <ul class="drop-down-content">
+                    <li class="drop-down-header">求督促</li>
+                    <li>督促别人</li>
+                    <li>我的目标</li>
+                    <li>我的督促</li>
+                    <li>未交作业</li>
+                    <li>交作业</li>
+                </ul>
+            </li>
+            <li class="drop-down">
+                <a href="#">文章</a>
+                <ul class="drop-down-content">
+                    <li>列表</li>
+                    <li>开通</li>
+                </ul>
+            </li>
+            <li class="drop-down">
+                <a href="#">APP下载</a>
+                <ul class="drop-down-content">
+                    <li>Android</li>
+                    <li>ios（越狱）</li>
+                </ul>
+            </li>
+            <li class="drop-down">
+                <a href="#">未登录</a>
+                <ul class="drop-down-content">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li>忘记密码</li>
+                </ul>
+            </li>
             <li>后台</li>
         </ul>
     </div>
