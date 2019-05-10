@@ -12,57 +12,61 @@
     margin-bottom: 10px;
     z-index: 2; /*指定了一个元素的堆叠顺序（重叠时哪个元素应该放在前面，或后面）*/
 }
-.navbar-logo{
-    margin:auto,0,auto,150px;
-    padding-left:150px;
-}
-.websit-name{
-    font-size:23px;
-}
-    .navbar > ul > li {
-        float: left;
-        margin-right: 20px;
-        display: block;
-    }
 
-    .navbar>ul {
-        position: absolute;
-        top: 1%;
-        right: 10%;
-        font-size:16px;
-    }
+.navbar-logo {
+    margin: auto,0,auto,150px;
+    padding-left: 150px;
+}
+
+.websit-name {
+    font-size: 23px;
+}
+
+.navbar > ul > li {
+    float: left;
+    margin-right: 20px;
+    display: block;
+}
+
+.navbar > ul {
+    position: absolute;
+    top: 1%;
+    right: 10%;
+    font-size: 16px;
+}
 /*    .navbar li {
                 display: inline-block;
                 
             }*/
-    .drop-down{
-        position:relative;
-    }
+.drop-down {
+     position: relative;
+}
+
 .drop-down-content {
     display: none;
     position: absolute;
     right: 0;
-    top:40px;
-    min-width:100px;
+    top: 40px;
+    min-width: 100px;
     list-style: none;
     border: 1px solid;
-    font-size:14px;
-    background-color:white;
-    margin-left:0px;
-    padding:5px;
-    line-height:25px;
+    font-size: 14px;
+    background-color: white;
+    margin-left: 0px;
+    padding: 5px;
+    line-height: 25px;
 }
 
 .drop-down:hover .drop-down-content {
     display: block;
 }
 
-.drop-down-header{
-    font-size:12px;
+.drop-down-header {
+    font-size: 12px;
 }
 
-.divider{
-    height:1px;
-    background-color:rgb(51,51,51);
-    margin:5px 0 5px 0;
+.divider {
+    height: 1px;
+    background-color: rgb(51,51,51);
+    margin: 5px 0 5px 0;
 }
