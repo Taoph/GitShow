@@ -7,7 +7,7 @@
     top: 100px;*/
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-    .content .right {
+    .content .content-right {
         /*position:relative;
     left:500px;
     bottom:200px;*/
@@ -17,7 +17,7 @@
      float:left;
      width:500px;
     }
-    .content .left {
+    .content .content-left {
         /*position:relative;*/
         float:left;
         margin-left:100px;
@@ -37,13 +37,17 @@ input[type="text"] {
     border-radius: 4px;
     border: 1px solid #ccc;
 }
+input[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+}
 .page-header {
     margin-top: 80px;
     margin-left:115px;
     font-size:30px;
     font-family:inherit;
     padding-bottom:20px;
-    border-bottom:1px solid rgb(51,51,51);
+    border-bottom:1px solid #eee;
    
 }
 
@@ -52,16 +56,28 @@ input[type="text"] {
 }
 
 .invite {
-    border: 1px dashed gray;
+    border: 2px dashed #eee;
     background-color: rgb(255,255,224);
     padding: 0 10px 0 10px;
-    height:182px;
-    margin-top:30px;
+    height: 182px;
+    margin-top: 30px;
+}
+
+#invite-why {
+    float: right;
+    font-size: 14px;
+    text-decoration: none;
+    padding-top: 2px;
 }
 .invite input[type="text"]{
     width:336px;
     height:34px;      
 }
+
 .forget{
+    float:right;
+}
+
+.pull-right{
     float:right;
 }

@@ -5,11 +5,17 @@
     bottom:-200px;*/
     clear:both;
     margin:5px;
+    text-decoration:none;
 }
-
+.footer a{
+    text-decoration:none;
+}
 .footer p{
     margin:2px;
 }
 #float-right{
     float:right;
+}
+#link-donate {
+    color: #3c763d;
 }
