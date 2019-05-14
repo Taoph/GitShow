@@ -57,6 +57,11 @@
     line-height: 25px;
 }
 
+    .drop-down-content a {
+        text-decoration: none;
+        color: #333;
+    }
+
 .drop-down:hover .drop-down-content {
     display: block;
 }
