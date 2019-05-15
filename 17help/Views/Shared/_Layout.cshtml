@@ -3,25 +3,47 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/ico" href="~/Image/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/logo.ico" />
     <title>@ViewBag.title·一起帮</title>
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link href="~/css/common.css" rel="stylesheet" />
     <link href="~/css/navbar.css" rel="stylesheet" />
     <link href="~/css/content.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
-    <style type="text/css">                               
-       .help{
-           position:fixed;
-           right:5%;
-           bottom:12%;
-       }
+    <style type="text/css">
+        .message {
+            clear: both;
+            margin-top: 68px;
+            background-color: #eee;
+            padding: 5px 20px;
+        }
+            .message a {
+                color: #31708f;
+                text-decoration: none;
+            }
+            .message>a{
+                float:right;
+            }
+        .help {
+            position: fixed;
+            right: 5%;
+            bottom: 12%;
+        }
+
         .help li {
-            border: 1px solid;
-            margin: 2px;
-            padding: 2px;
-            background-color: rgba(128,255,212,0.7);
-            list-style: none;
-            border-radius: 4px;
-            
+                border: 1px solid;
+                margin: 2px;
+                padding: 2px;
+                background-color: rgba(128,255,212,0.7);
+                list-style: none;
+                border-radius: 4px;
+            }
+
+        .contain {
+            margin-left: 200px;
+            margin-right: 100px;
         }
     </style>
 </head>
@@ -74,21 +96,25 @@
                 <ul class="drop-down-content">
                     <li><a href="#">登陆</a></li>
                     <li><a href="#">注册</a></li>
-                    <li><a >忘记密码</a></li>
+                    <li><a>忘记密码</a></li>
                 </ul>
             </li>
         </ul>
     </div>
-    <div class="content">
+    <div class="message contain">
+        <span>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</span>
+        <a href="#">全部消息</a>
+    </div>
+    <div class="content contain">
         @RenderBody()
     </div>
-    <div class="help">
+    <aside class="help">
         <ul>
             <li><a href="#">帮助</a></li>
             <li><a href="#">反馈</a></li>
         </ul>
-    </div>
-    <div class="footer">
+    </aside>
+    <footer class="footer contain">
         <p>
             <a href="#">关于我们 |</a>
             <a href="#">常见问题 |</a>
@@ -99,7 +125,7 @@
         </p>
         <p>友情链接:</p>
         <p id="float-right"><a href="http://www.miitbeian.gov.cn">渝ICP备18007191号（备案）</a>&copy; 2019 - 首顾科技</p>
-    </div>
+    </footer>
 
 </body>
 </html>

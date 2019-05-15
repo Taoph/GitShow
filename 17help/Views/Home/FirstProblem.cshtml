@@ -1,9 +1,10 @@
 ﻿
 @{
     Layout = "_Layout";
+    ViewBag.Title = "首次求助测试";
 }
-<h2 class="page-header">首次求助测试 <a href="#">目的</a></h2>
-<div class="content-left">
+<h2 class="page-header">首次求助测试<a id="aim" href="#">目的</a></h2>
+<main class="content-left FirstProblem col-9">
     <form>
         <ul>
             <li>
@@ -101,18 +102,39 @@
         <button type="reset">重填</button>
     </form>
     
-</div>
-<div class="content-right">
-    <div>
+</main>
+<aside class="content-right col-3">
+    <div class="newbie-task">
         <h4>新手任务</h4>
         <hr>
-        <p>填写<a href="#">联系方式</a></p>
-        <p>激活<a href="#">Email</a></p>
-        <p>邀请<a href="#">我的小伙伴</a></p>
-        <p>参加<a href="#">新人测试</a></p>
-        <p>发布<a href="#">第一个求助</a></p>
-        <p>尝试<a href="#">第一次协助</a></p>
-        <p>获得<a href="#">若干帮帮币</a></p>
+        <p>填写:<a href="#">联系方式</a></p>
+        <p>激活:<a href="#">Email</a></p>
+        <p>邀请:<a href="#">我的小伙伴</a></p>
+        <p>参加:<a href="#">新人测试</a></p>
+        <p>发布:<a href="#">第一个求助</a></p>
+        <p>尝试:<a href="#">第一次协助</a></p>
+        <p>获得:<a href="#">若干帮帮币</a></p>
     </div>
-</div>
+    <a id="wait" href="#">修改</a>
+    <div class="img-responsive">        
+        <div class="wait">
+           等待上传中
+        </div>
+    </div>
+    <div class="user-show">
+        <div id="row1">
+            <label>用户：</label>
+            <span>常醉风</span>
+            <a href="#">修改</a>
+        </div>
+        <div id="row2">
+            <label>性别：</label>
+            <span>男</span>
+        </div>
+        <div id="row3">
+            <label>关注：</label>
+            <p><a href="#">C#</a><a href="#">编程开发语言</a></p>
+        </div>
+    </div>
+</aside>
 
