@@ -6,13 +6,17 @@
     clear: both;
     margin: 5px;
     text-decoration: none;
-    border-top: 1px solid #eee;
-    padding-top:18px;
+    /*border-top: 1px solid #eee;*/
+    padding-top: 18px;
 }
-    .footer a {
-        text-decoration: none;
-        color: #337ab7;
-    }
+
+#footer-divider {
+    border: 1px solid #eee;
+}
+.footer a {
+    text-decoration: none;
+    color: #337ab7;
+}
     .footer p {
         margin: 2px;
         font-size: 14px;

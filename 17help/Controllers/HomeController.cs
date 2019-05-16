@@ -31,6 +31,11 @@ namespace _17help.Controllers
             return View();
         }
 
+        public IActionResult Problem()
+        {
+            return View();
+        }
+
         public IActionResult Navbar()
         {
             return View();
