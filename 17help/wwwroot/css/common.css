@@ -64,3 +64,9 @@ ul li{
     line-height:25px;
     font-size:14px;
 }
+hr{
+    border:1px solid #eee;
+}
+a{
+    text-decoration:none;
+}
