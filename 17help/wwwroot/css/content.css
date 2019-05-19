@@ -153,17 +153,25 @@ button[type="submit"] {
     }
 
 /*Problem*/
+#problem{
+    margin-left:50px;
+    margin-right:50px;
+}
+#problem-main{
+    margin-top:50px;
+}
 #display-none{
     float:left;
 }
-#display-only{
-    float:right;
+#display-only {
+    margin-left: 200px;
+    padding-left: 150px;
 }
 .flex-container {
     clear: both;
     display: flex;
     flex-direction: column;
-    padding:15px;
+    padding-top: 25px;
 }
 
     .flex-container p span {
@@ -221,16 +229,18 @@ button[type="submit"] {
 .keywords {
     border: 1px solid;
     margin: 15px;
+    padding: 10px;
 }
 
-    .keywords a {
+    .keywords a[title^="已使用"] {
         margin: 5px 20px 5px 0;
         /* margin-bottom: 15px; */
         background-color: rgba(51,51,51,0.875);
         font-size: 19.5px;
         color: white;
-        padding: 3px;
+        padding: 3px 5px;
         border-radius: 10px;
+        display: inline-block;
     }
 
     .keywords input {
