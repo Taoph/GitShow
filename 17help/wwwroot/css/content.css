@@ -227,7 +227,7 @@ button[type="submit"] {
     }
 
 .keywords {
-    border: 1px solid;
+    border: 1px dashed #ccc;
     margin: 15px;
     padding: 10px;
 }
@@ -243,18 +243,58 @@ button[type="submit"] {
         display: inline-block;
     }
 
-    .keywords input {
-        width: 50%;
-        height: 90%;
+#keywords-query {
+    display: inline-flex;
+}
+
+    #keywords-query input {
+        width: 70%;
+        height: 30px;
+        border-radius: 4px 0 0 4px;
+        margin-right: 0px;
+    }
+
+    #keywords-query span {
+        border: 1px solid #ccc;
+        padding: 5.81px;
+        margin-left: 0px;
+        border-left-width: 0px;
+        border-radius: 0 4px 4px 0;
+        background-color: #eee;
+    }
+
+    #keywords-query + a {
+        float: right;
+        border: 1px solid #eee;
+        padding: 5px 12px;
+        border-radius: 4px;
+        color: black;
     }
 
 .infobar {
     border: 1px solid #eee;
     margin: 15px;
+    padding:15px;
 }
 
     .infobar li {
         display: inline-block;
-        padding: 0 55px 10px 0px;
+        padding: 0 8% 10px 0px;
         font-size: 18px
     }
+
+    .infobar tr {
+        line-height: 34px;
+    }
+
+.fine-article {
+    margin: 15px;
+    padding: 15px;
+    border: 1px dashed #ccc;
+}
+
+.advertising {
+    margin: 15px;
+    line-height: 23px;
+    border: 1px dashed #ccc;
+}
