@@ -3,12 +3,12 @@
     Layout = "_Layout";
 }
 
-<div id="problem">
+<div id="problem" class="contain">
     <div class="message">
         <span>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</span>
         <a href="#">全部消息</a>
     </div>
-    <main class="col-8" id="problem-main">
+    <main class="col-8 problem-main">
         <form action="#" post="#">
             <div id="display-none">
                 <label><span>不显示</span></label>
@@ -55,14 +55,19 @@
 
         <div class="flex-container">
             <div class="problem-time-questioner">
-                <span></span>
-                <a href="#"></a>
+                <span>2019年05月07日 16点47分</span>
+                <a href="#">桂ILLL</a>
             </div>
             <div class="problem-status">
                 <span>已撤销</span>
                 <a class="problem-name" href="#">winform视频通信程序卡顿</a>
             </div>
-            <div problem-content></div>
+            <div problem-content>
+                用的是vs2015的winform窗体程序，主要是类似于QQ的视频语音通信，语音功能搁浅了想先把视频功能做好，但是没有建立连接的时候视频采集很正常，一旦建立连接通过服务器转发视频数据的时候，不仅自己的视频显示出现卡顿，对方的视频显示也很卡。
+
+
+                在本机上进行了测试不是网络的原因，不发送数据包就不卡， 开始发送数据了就卡了，感觉是出现了多个线程同时占用摄像头的原因，求各位大侠帮帮忙。有现成的视频通信程序也可以发给我参考一下！感激不尽
+            </div>
             <p></p>
             <div class="problem-result">
                 <span>悬赏：8</span>

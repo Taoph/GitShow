@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewData["Title"] = "ProblemIndex";
+}
+
+<div class="contain">
+    <div class="message">
+        <span>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</span>
+        <a href="#">全部消息</a>
+    </div>
+    <main class="col-8 problem-main">
+        <div class="flex-container">
+            <div class="problem-time-questioner">
+                <span>2019年05月07日 16点47分</span>
+                <a href="#">桂ILLL</a>
+            </div>
+            <div class="problem-status">
+                <span>已撤销</span>
+                <a class="problem-name" href="#">winform视频通信程序卡顿</a>
+            </div>
+            <div problem-content>
+                <p>
+                    用的是vs2015的winform窗体程序，主要是类似于QQ的视频语音通信，语音功能搁浅了想先把视频功能做好，但是没有建立连接的时候视频采集很正常，一旦建立连接通过服务器转发视频数据的时候，不仅自己的视频显示出现卡顿，对方的视频显示也很卡。
+                </p>
+                <p>
+                    在本机上进行了测试不是网络的原因，不发送数据包就不卡， 开始发送数据了就卡了，感觉是出现了多个线程同时占用摄像头的原因，求各位大侠帮帮忙。有现成的视频通信程序也可以发给我参考一下！感激不尽
+                </p>
+            </div>
+            <p>
+                <span title="已使用6次">winform</span>
+                <span title="已使用1次">视频通信</span>
+                <span title="已使用94次">C#</span>
+                <span title="已使用235次">编程开发语言</span>
+            </p>
+            <div class="problem-result">
+                <span>悬赏：8</span>
+                <a href="#">应答：0</a>
+                <a href="#">总结：0</a>
+            </div>
+        </div>
+        <button id="problem-help">我能帮忙</button>
+        <div class="problem-summary">
+            <header>问题总结</header>
+            <a href="#">写总结,赚帮帮币</a>
+            <div>
+                <p>
+                    (´･･)ﾉ(._.`)
+                </p>
+                <p>还没有内容呢！等待求助被解决（酬谢/撤销）后，求助人或好心人总结……</p>
+            </div>
+        </div>
+    </main>
+    <aside class="col-4 problem-aside">
+
+        <div class="keywords">
+            <h2>关键字</h2>
+            <hr />
+            <div>
+                <a href="#" title="已使用234次">编程开发语言</a>
+                <a href="#" title="已使用97次">C#</a>
+                <a href="#" title="已使用79次">JAVA</a>
+                <a href="#" title="已使用75次">工具软件</a>
+                <a href="#" title="已使用62次">Javascript</a>
+                <a href="#" title="已使用53次">顾问咨询</a>
+                <a href="#" title="已使用44次">Html</a>
+                <a href="#" title="已使用38次">VisualStudio</a>
+                <a href="#" title="已使用34次">操作系统</a>
+                <a href="#" title="已使用25次">SQL</a>
+                <a href="#" title="已使用28次">职场</a>
+                <a href="#" title="已使用23次">法律</a>
+                <a href="#" title="已使用18次">Python</a>
+                <a href="#" title="已使用14次">.net</a>
+                <a href="#" title="已使用13次">css</a>
+                <a href="#" title="已使用12次">JSP</a>
+            </div>
+            <hr />
+            <div>
+                <span id="keywords-query">
+                    <input type="text" placeholder=" 直接输入关键字查找" />
+                    <span>查询</span>
+                </span>
+                <a href="#">
+                    <span>换一批</span>
+                </a>
+            </div>
+        </div>
+        <div class="infobar">
+            <ul>
+                <li><a href="#">每日督促</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">新注册</a></li>
+            </ul>
+            <table>
+                <tr>
+                    <td colspan="2"> <span>2019年05月17日</span></td>
+                </tr>
+                <tr>
+                    <td><strong>共扫描目标：</strong></td>
+                    <td>3个</td>
+                </tr>
+                <tr>
+                    <td><strong>当天休息：</strong></td>
+                    <td>0人</td>
+                </tr>
+                <tr>
+                    <td><strong>已交作业</strong></td>
+                    <td>0份</td>
+                </tr>
+                <tr>
+                    <td><strong>未交作业</strong></td>
+                    <td>3人</td>
+                </tr>
+            </table>
+        </div>
+        <div class="fine-article">
+            <span>精品文章</span>
+            <hr />
+            <p><a href="#">源栈培训：前端-5-Bootstrap.js和css动画</a></p>
+            <p><a href="#">程序员所积累的编程知识在10年后有多少将变得没用？</a></p>
+            <p><a href="#">为什么越努力就越变得焦虑，为什么努力不能变得快乐？</a></p>
+            <p><a href="#">源栈培训：前端：JQuery</a></p>
+            <p><a href="#">怎样才能从英语很糟糕的人变成英语很厉害的人？</a></p>
+        </div>
+        <div class="advertising">
+            <ol>
+                <li>免费广告位，抢到就是赚到</li>
+                <li>免费广告位，抢到就是赚到</li>
+                <li>免费广告位，抢到就是赚到</li>
+                <li>免费广告位，抢到就是赚到</li>
+                <li>免费广告位，抢到就是赚到</li>
+                <li>本站主机由<a href="http://www.west.cn/index.asp?ReferenceID=563969">西部数码提供</a></li>
+            </ol>
+        </div>
+    </aside>
+
+</div>

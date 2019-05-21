@@ -33,6 +33,12 @@ namespace _17help.Controllers
 
         public IActionResult Problem()
         {
+
+            return View();
+            
+        }
+        public IActionResult ProblemIndex()
+        {
             return View();
         }
 

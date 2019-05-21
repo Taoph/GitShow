@@ -1,5 +1,4 @@
-﻿body {
-}
+﻿
 
 /**{
     margin:0px;
@@ -68,5 +67,6 @@ hr{
     border:0.5px solid #eee;
 }
 a{
+    color:#337ab7;
     text-decoration:none;
 }

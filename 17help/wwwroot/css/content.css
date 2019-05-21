@@ -1,5 +1,4 @@
-﻿body {
-}
+﻿
 
 .content {
     margin: 5px;
@@ -153,15 +152,14 @@ button[type="submit"] {
     }
 
 /*Problem*/
-#problem{
-    margin-left:50px;
-    margin-right:50px;
-}
-#problem-main{
+
+.problem-main{
     margin-top:50px;
 }
-#display-none{
-    float:left;
+#display-none {
+    float: left;
+    border-left: 6px solid gray;
+    padding-left: 30px; 
 }
 #display-only {
     margin-left: 200px;
@@ -204,6 +202,9 @@ button[type="submit"] {
     float:right;
 }
 
+.problem-time-questioner {
+    font-size: 14px;
+}
 .problem-result {
     display: flex;
     width: 33%;
@@ -230,6 +231,7 @@ button[type="submit"] {
     border: 1px dashed #ccc;
     margin: 15px;
     padding: 10px;
+    font-weight: bold;
 }
 
     .keywords a[title^="已使用"] {
@@ -298,3 +300,34 @@ button[type="submit"] {
     line-height: 23px;
     border: 1px dashed #ccc;
 }
+
+/*ProblemIndex*/
+#problem-help {
+    margin-left: 400px;    
+    /* display: flex; */
+    width: 95px;
+    height: 65px;
+    text-align: center;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.problem-summary {
+    margin-top: 22px;
+}
+
+    .problem-summary header {
+        display: inline-block;
+        font-size: 22px;
+    }
+
+    .problem-summary a {
+        float: right;
+    }
+
+    .problem-summary div {
+        border: 1px dashed #ccc;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 8px
+    } 
