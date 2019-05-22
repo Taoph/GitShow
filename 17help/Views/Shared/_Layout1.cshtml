@@ -1,0 +1,139 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/logo.ico" />
+    <title>@ViewBag.title·一起帮</title>
+    <!--[if lt IE 9]>
+      <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <link href="~/css/common.css" rel="stylesheet" />
+    <link href="~/css/navbar1.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/content.css" rel="stylesheet" />
+    <link href="~/css/footer.css" rel="stylesheet" />
+    <style type="text/css">
+        .message {
+            clear: both;
+            margin-top: 68px;
+            background-color: #eee;
+            padding: 5px 20px;
+        }
+
+            .message a {
+                color: #31708f;
+                text-decoration: none;
+            }
+
+            .message > a {
+                float: right;
+            }
+
+        .help {
+            position: fixed;
+            right: 5%;
+            bottom: 12%;
+        }
+
+            .help li {
+                border: 1px solid;
+                margin: 2px;
+                padding: 2px;
+                background-color: rgba(128,255,212,0.7);
+                list-style: none;
+                border-radius: 4px;
+            }
+
+        .contain {
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+            <a class="navbar-logo" href="#" alt="一起帮Logo">
+                <img src="~/images/logo-big.ico" />
+            </a>
+            <span class="navbar-text">
+                <strong class="websit-name">一起帮</strong>
+                · 网络互助平台
+            </span>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="presentation">求助</a>
+                    <ul class="dropdown-menu">
+                        <li class="drop-down-header">督导班</li>
+                        <li><a href="#">疑问发布</a></li>
+                        <li><a href="#">疑问列表</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">列表</a></li>
+                        <li><a href="#">发布</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>督促</span>
+                    <ul class="drop-down-content">
+                        <li class="drop-down-header">求督促</li>
+                        <li><a href="#">督促别人</a></li>
+                        <li><a href="#">我的目标</a></li>
+                        <li><a href="#">我的督促</a></li>
+                        <li><a href="#">未交作业</a></li>
+                        <li><a href="#">交作业</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>文章</span>
+                    <ul class="drop-down-content">
+                        <li><a href="#">列表</a></li>
+                        <li><a href="#">开通</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>APP下载</span>
+                    <ul class="drop-down-content">
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">ios(越狱)</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span>未登录</span>
+                    <ul class="drop-down-content">
+                        <li><a href="#">登陆</a></li>
+                        <li><a href="#">注册</a></li>
+                        <li><a>忘记密码</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <aside class="help">
+        <ul>
+            <li><a href="#">帮助</a></li>
+            <li><a href="#">反馈</a></li>
+        </ul>
+    </aside>
+    <footer class="footer contain">
+        <hr id="footer-divider" />
+        <p>
+            <a href="#">关于我们 |</a>
+            <a href="#">常见问题 |</a>
+            <a href="#">意见建议 |</a>
+            <a href="#">历史通知 |</a>
+            <a id="link-donate" href="#">友情捐赠 |</a>
+            <a href="#">融资2018 </a>
+        </p>
+        <p>友情链接:</p>
+        <p id="float-right"><a href="http://www.miitbeian.gov.cn">渝ICP备18007191号（备案）</a>&copy; 2019 - 首顾科技</p>
+    </footer>
+
+</body>
+</html>
