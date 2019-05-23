@@ -10,7 +10,10 @@ namespace _17help.Controllers
 {
     public class HomeController : Controller
     {
-        
+        public IActionResult nav()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

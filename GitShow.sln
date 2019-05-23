@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitShow", "GitShow\GitShow.csproj", "{F9BD1B36-3C7E-4BC0-8CE2-CA6D3344EC37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17help", "17help\17help.csproj", "{88B2A6CE-55F1-419A-A095-C57772F4E3D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "17help", "17help\17help.csproj", "{88B2A6CE-55F1-419A-A095-C57772F4E3D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

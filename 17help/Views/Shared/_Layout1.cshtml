@@ -10,8 +10,9 @@
       <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
     <link href="~/css/common.css" rel="stylesheet" />
-    <link href="~/css/navbar1.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <link href="~/css/content.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
     <style type="text/css">
@@ -53,7 +54,7 @@
     </style>
 </head>
 <body>
-    <div class="navbar navbar-default">
+    <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
             <a class="navbar-logo" href="#" alt="一起帮Logo">
@@ -64,52 +65,60 @@
                 · 网络互助平台
             </span>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="presentation">求助</a>
-                    <ul class="dropdown-menu">
-                        <li class="drop-down-header">督导班</li>
-                        <li><a href="#">疑问发布</a></li>
-                        <li><a href="#">疑问列表</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">列表</a></li>
-                        <li><a href="#">发布</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>督促</span>
-                    <ul class="drop-down-content">
-                        <li class="drop-down-header">求督促</li>
-                        <li><a href="#">督促别人</a></li>
-                        <li><a href="#">我的目标</a></li>
-                        <li><a href="#">我的督促</a></li>
-                        <li><a href="#">未交作业</a></li>
-                        <li><a href="#">交作业</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>文章</span>
-                    <ul class="drop-down-content">
-                        <li><a href="#">列表</a></li>
-                        <li><a href="#">开通</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>APP下载</span>
-                    <ul class="drop-down-content">
-                        <li><a href="#">Android</a></li>
-                        <li><a href="#">ios(越狱)</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span>未登录</span>
-                    <ul class="drop-down-content">
-                        <li><a href="#">登陆</a></li>
-                        <li><a href="#">注册</a></li>
-                        <li><a>忘记密码</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav  navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">求助</a>
+                        <ul class="dropdown-menu">
+                            <li class="drop-down-header">督导班</li>
+                            <li><a href="#">疑问发布</a></li>
+                            <li><a href="#">疑问列表</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">列表</a></li>
+                            <li><a href="#">发布</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">督促</a>
+                        <ul class="dropdown-menu">
+                            <li class="drop-down-header">求督促</li>
+                            <li><a href="#">督促别人</a></li>
+                            <li><a href="#">我的目标</a></li>
+                            <li><a href="#">我的督促</a></li>
+                            <li><a href="#">未交作业</a></li>
+                            <li><a href="#">交作业</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">文章</a>
+                        <ul class="dropdown-menu drop-down-content">
+                            <li><a href="#">列表</a></li>
+                            <li><a href="#">开通</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">APP下载</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Android</a></li>
+                            <li><a href="#">ios(越狱)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">未登录</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">登陆</a></li>
+                            <li><a href="#">注册</a></li>
+                            <li><a>忘记密码</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+    </div>
+    <div class="container ">
+        <div class="jumbotron">
+            <p>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</p>
+            <a class="pull-right" href="#">全部消息</a>
         </div>
     </div>
     <div class="content">
