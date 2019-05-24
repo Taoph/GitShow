@@ -75,6 +75,8 @@ button[type="submit"] {
 .forget{
     float:right;
     padding-right:30px;
+    margin-top:10px;
+    margin-right:58px;
 }
 
 .pull-right{

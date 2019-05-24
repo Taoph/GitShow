@@ -16,11 +16,14 @@
     <link href="~/css/content.css" rel="stylesheet" />
     <link href="~/css/footer.css" rel="stylesheet" />
     <style type="text/css">
+        body {
+            padding-top: 55px;
+        }
         .message {
-            clear: both;
-            margin-top: 68px;
+          
             background-color: #eee;
             padding: 5px 20px;
+           
         }
 
             .message a {
@@ -51,13 +54,16 @@
             margin-left: 200px;
             margin-right: 100px;
         }
+        #confirmCode{
+            width:18%;
+        }
     </style>
 </head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-            <a class="navbar-logo" href="#" alt="一起帮Logo">
+            <a class="pull-left" href="#" alt="一起帮Logo">
                 <img src="~/images/logo-big.ico" />
             </a>
             <span class="navbar-text">
@@ -70,7 +76,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">求助</a>
                         <ul class="dropdown-menu">
-                            <li class="drop-down-header">督导班</li>
+                            <li class="dropdown-header">督导班</li>
                             <li><a href="#">疑问发布</a></li>
                             <li><a href="#">疑问列表</a></li>
                             <li class="divider"></li>
@@ -81,7 +87,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown">督促</a>
                         <ul class="dropdown-menu">
-                            <li class="drop-down-header">求督促</li>
+                            <li class="dropdown-header">求督促</li>
                             <li><a href="#">督促别人</a></li>
                             <li><a href="#">我的目标</a></li>
                             <li><a href="#">我的督促</a></li>
@@ -114,13 +120,7 @@
                 </ul>
             </div>
           </div>
-    </div>
-    <div class="container ">
-        <div class="jumbotron">
-            <p>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</p>
-            <a class="pull-right" href="#">全部消息</a>
-        </div>
-    </div>
+    </div>    
     <div class="content">
         @RenderBody()
     </div>

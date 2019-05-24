@@ -10,17 +10,212 @@
     <meta name="viewport" content="width=device-width" />
     <title>nav</title>
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="" href="#">Bootstrap theme</a>
+                <a class="navbar-brand" href="#">Bootstrap theme</a>
             </div>
             <div class="collapse navbar-collapse">
-
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#">Home</a></li> 
+                   <li><a href="#">About</a></li> 
+                   <li><a href="#">Contact</a></li>
+                   <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a class="dropdown-header" href="#">Nav header</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                   </li> 
+                </ul>
             </div>
         </div>
     </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Theme example</h1>
+            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+        </div>
+        <div class="page-header">
+            <h1>Buttons</h1>
+        </div>
+        <p>
+            <button class="btn btn-default btn-lg">Default</button>
+            <button class="btn btn-primary btn-lg">Primary</button>
+            <button class="btn btn-success btn-lg">Success</button>
+            <button class="btn btn-info btn-lg">Info</button>
+            <button class="btn btn-warning btn-lg">Warning</button>
+            <button class="btn btn-danger btn-lg">Danger</button>
+            <button class="btn btn-link btn-lg">Link</button>
+        </p>
+        <p>
+            <button class="btn btn-default">Default</button>
+            <button class="btn btn-primary ">Primary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-info">Info</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-link">Link</button>
+        </p>
+        <p>
+            <button class="btn btn-default btn-sm">Default</button>
+            <button class="btn btn-primary btn-sm">Primary</button>
+            <button class="btn btn-success btn-sm">Success</button>
+            <button class="btn btn-info btn-sm">Info</button>
+            <button class="btn btn-warning btn-sm">Warning</button>
+            <button class="btn btn-danger btn-sm">Danger</button>
+            <button class="btn btn-link btn-sm">Link</button>
+        </p>
+        <p>
+            <button class="btn btn-default btn-xs">Default</button>
+            <button class="btn btn-primary btn-xs">Primary</button>
+            <button class="btn btn-success btn-xs">Success</button>
+            <button class="btn btn-info btn-xs">Info</button>
+            <button class="btn btn-warning btn-xs">Warning</button>
+            <button class="btn btn-danger btn-xs">Danger</button>
+            <button class="btn btn-link btn-xs">Link</button>
+        </p>
+
+        <div class="page-header">
+            <h1>Tables</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>&#64;mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>&#64;fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>&#64;twitter</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <table class="table table-striped">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>&#64;mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>&#64;fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>&#64;twitter</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>&#64;mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>&#64;fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>&#64;twitter</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-xs-6">
+                <table class="table table-hover">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>&#64;mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>&#64;fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>&#64;twitter</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="">
+            <h1 class="">Thumbnail</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                    <img src="holder.js/200x200" class="img-thumbnail" alt="#"/>
+                </a>
+            </div>
+        </div>      
+    </div>
 </body>
 </html>
