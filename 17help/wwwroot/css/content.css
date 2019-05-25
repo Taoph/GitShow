@@ -74,13 +74,15 @@ button[type="submit"] {
 
 .forget{
     float:right;
-    padding-right:30px;
+    padding-right:13px;
     margin-top:10px;
     margin-right:58px;
 }
-
-.pull-right{
-    float:right;
+.website-show{
+    margin-bottom:8px;
+}
+.pull-right {
+    float: right;
 }
 
 /*FirstProblem*/
