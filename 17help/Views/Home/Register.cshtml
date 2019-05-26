@@ -1,57 +1,61 @@
 ﻿
 @{
-    Layout = "_Layout";
+    Layout = "_Layout2";
     ViewData["title"] = "注册";
 }
-<div class="contain">
+<div class="container">
     <div class="message">
         <span>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</span>
         <a href="#">全部消息</a>
     </div>
-    <h2 class="page-header">注册</h2>
-    <main class="content-left col-5">
-        <form method="post" action="#">
-            <div class="invite">
-                <a href="#" id="invite-why">为什么需要邀请</a>
-                <p>
-                    <label for="Inviter">邀请人：</label><br />
-                    <input type="text" id="Inviter" placeholder="  他的用户名，模糊查询只能从头开始" value="" />
-                </p>
-                <p>
-                    <label for="inviteCode">邀请码：（* 必填）</label><br />
-                    <input type="text" id="inviteCode" placeholder="  邀请码只能是4位数字" value="" />
-                </p>
-            </div>
-            <p>
-                <label for="name">用户名：（* 必填）</label> <br />
-                <input type="text" id="name" placeholder="  登录用户名，可修改，不能重复" value="" />
-            </p>
-            <p>
-                <label for="password">密码：（* 必填）</label> <br />
-                <input type="text" id="password" placeholder="  不少于4位" value="" />
-            </p>
-            <p>
-                <label for="confirmPassword">验证密码：（* 必填）</label> <br />
-                <input type="text" id="confirmPassword" placeholder="  不少于4位" value="" />
-            </p>
-            <p>
-                <label for="confirmCode">验证码：（* 必填）</label> <br />
-                <input type="text" id="confirmCode" value="" style="width:80px;height:28px" />
-                <span style="font-size:13px;">点击输入框显示</span><br />
-            </p>
-            <button type="submit">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="reset">重置</button>
-        </form>
-    </main>
-    <aside class="col-sm-6">
-        <h3 class="text-info">说明</h3>
-        <ol class="website-show">
-            <li>我们希望通过一起帮，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
-            <li>现在互联网远程技术（比如QQ桌面共享）已经非常成熟，当我们再遇到上述问题，如果别人能直接远程给予帮助，岂不是好？</li>
-            <li>当然，你也可以在你熟悉的领域去帮助别人。由此而形成我们这个“你帮他他帮我我帮你，大家一起帮”的网上互助社区平台。</li>
-            <li>公平起见，我们还引入了 帮帮点/币/豆 三级概念，以记录和衡量社区成员的收获和贡献。</li>
-            <li>赶快加入我们，赚取帮帮币吧！</li>
-            <li><a href="#">了解更多</a></li>
-        </ol>
-    </aside>
+    <div class="page-header">
+        <h2 class="">注册</h2>
+    </div>
+    <div class="row">
+        <main class="col-md-5 col-xs-12">
+            <form method="post" action="#" class="form-group">
+                <div class="invite">
+                    <a href="#" id="invite-why">为什么需要邀请</a>
+                    <div class="form-group">
+                        <label for="Inviter">邀请人：</label><br />
+                        <input type="text" id="Inviter" class="form-control" placeholder="  他的用户名，模糊查询只能从头开始" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label for="inviteCode">邀请码：（* 必填）</label><br />
+                        <input type="text" id="inviteCode" class="form-control" placeholder="  邀请码只能是4位数字" value="" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">用户名：（* 必填）</label> <br />
+                    <input type="text" id="name" class="form-control" placeholder="  登录用户名，可修改，不能重复" value="" />
+                </div>
+                <div class="form-group">
+                    <label for="password">密码：（* 必填）</label> <br />
+                    <input type="text" id="password" class="form-control" placeholder="  不少于4位" value="" />
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">验证密码：（* 必填）</label> <br />
+                    <input type="text" id="confirmPassword" class="form-control" placeholder="  不少于4位" value="" />
+                </div>
+                <div class="form-group">
+                    <label for="confirmCode">验证码：（* 必填）</label> <br />
+                    <input type="text" id="confirmCode" class="form-control" value="" style="width:80px;height:28px" />
+                    <span style="font-size:13px;">点击输入框显示</span><br />
+                </div>
+                <button type="submit">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="reset">重置</button>
+            </form>
+        </main>
+        <aside class="col-md-6 col-xs-12">
+            <h3 class="text-info">说明</h3>
+            <ol class="website-show">
+                <li>我们希望通过一起帮，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
+                <li>现在互联网远程技术（比如QQ桌面共享）已经非常成熟，当我们再遇到上述问题，如果别人能直接远程给予帮助，岂不是好？</li>
+                <li>当然，你也可以在你熟悉的领域去帮助别人。由此而形成我们这个“你帮他他帮我我帮你，大家一起帮”的网上互助社区平台。</li>
+                <li>公平起见，我们还引入了 帮帮点/币/豆 三级概念，以记录和衡量社区成员的收获和贡献。</li>
+                <li>赶快加入我们，赚取帮帮币吧！</li>
+                <li><a href="#">了解更多</a></li>
+            </ol>
+        </aside>
+    </div>
 </div>
