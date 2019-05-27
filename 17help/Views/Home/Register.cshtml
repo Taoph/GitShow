@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = "_Layout2";
+    Layout = "_Layout1";
     ViewData["title"] = "注册";
 }
 <div class="container">
@@ -12,10 +12,10 @@
         <h2 class="">注册</h2>
     </div>
     <div class="row">
-        <main class="col-md-5 col-xs-12">
+        <main class="col-md-5 col-lg-4">
             <form method="post" action="#" class="form-group">
-                <div class="invite">
-                    <a href="#" id="invite-why">为什么需要邀请</a>
+                <div class="alert alert-warning">
+                    <a href="#" id="invite-why" class="pull-right">为什么需要邀请</a>
                     <div class="form-group">
                         <label for="Inviter">邀请人：</label><br />
                         <input type="text" id="Inviter" class="form-control" placeholder="  他的用户名，模糊查询只能从头开始" value="" />
@@ -46,7 +46,7 @@
                 <button type="reset">重置</button>
             </form>
         </main>
-        <aside class="col-md-6 col-xs-12">
+        <aside class="col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
             <h3 class="text-info">说明</h3>
             <ol class="website-show">
                 <li>我们希望通过一起帮，能直接解决大家在电脑操作/软件使用/编程学习等方面的具体问题。</li>
