@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = "_Layout1";
+}
+
+<div class="container">
+    <div class="message">
+        <span>文章的评论<a href="#">深有感触，学了数据结构感觉整个人很懵逼</a>被<a href="#">叶飞</a>赞，获得<a href="#">帮帮点</a>奖励6点</span>
+        <a href="#">全部消息</a>
+    </div>
+    <div class="row">
+        <main class="col-md-9">
+            <div class="page-header">
+                <h2>疑难解答·督导班</h2>
+            </div>
+            <div class="yellow-highlight draft">
+                <p>你还有未使用的草稿<a href="#">(查看全部)</a></p>
+                <p>点击<a href="#">这里</a>使用最近一次生成的草稿</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="confusion-title">标题：（* 必填)</label>                        
+                    <input type="text" id="confusion-title" class="form-control" placeholder=" 简明扼要，不超过255字" disabled="disabled"/>                 
+                </div>
+                <div class="form-group">
+                    <label for="confusion-content">描述：（* 必填) </label>                        
+                    <textarea rows="20" id="confusion-content" class="form-control"></textarea>
+                   
+                </div>
+                <button class="btn btn-primary">提交</button>
+                <button class="btn btn-default">保存</button>
+            </form>
+        </main>
+        <aside class="col-md-3">
+            <div class="yellow-highlight newbie-task">
+                <div class="page-header">
+                    <h4>新手任务</h4>
+                </div>
+                <p>填写:<a href="#">联系方式</a></p>
+                <p>激活:<a href="#">Email</a></p>
+                <p>邀请:<a href="#">我的小伙伴</a></p>
+                <p>参加:<a href="#">新人测试</a></p>
+                <p>发布:<a href="#">第一个求助</a></p>
+                <p>尝试:<a href="#">第一次协助</a></p>
+                <p>获得:<a href="#">若干帮帮币</a></p>
+            </div>
+            <a class="pull-right" href="#">修改</a>
+            <div class="clearfix"></div>
+            <div class="img-responsive ">
+                <div class="wait">
+                    等待上传中
+                </div>
+            </div>
+            <div class="user-show">
+                <div id="row1">
+                    <label>用户：</label>
+                    <span>常醉风</span>
+                    <a href="#">修改</a>
+                </div>
+                <div id="row2">
+                    <label>性别：</label>
+                    <span>男</span>
+                </div>
+                <div id="row3">
+                    <label>关注：</label>
+                    <p>
+                        <span class="label label-default" href="#">C#</span>
+                        <span class="label label-default" href="#">编程开发语言</span>
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </div>
+</div>

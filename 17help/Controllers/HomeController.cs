@@ -10,6 +10,10 @@ namespace _17help.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Confusion()
+        {
+            return View();
+        }
         public IActionResult nav()
         {
             return View();

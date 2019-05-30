@@ -3,18 +3,24 @@
 .border-dashed {
     border: 1px dashed #ccc;
     border-radius: 4px;
-    margin: 5px;
+    /*margin: 5px;
     margin-top: 15px;
-    padding: 15px;
+    padding: 15px;*/
 }
 
 .occupy {
     margin-top: 55px;
 }
 
+.yellow-highlight {
+    background-color: #ffffe0;
+    border: 2px dashed #eee;
+    border-radius: 4px 5px;
+}
+
 
 /******************************************************Logon*****************************************************************/
-.website-show li {
+ .website-show li {
     margin-bottom: 8px;
 }
 
@@ -162,4 +168,29 @@
 #display-only {
     margin-left: 200px;
     padding-left: 150px;
+}
+
+/*****************************************************Confusion*****************************************************************/
+
+#Confusion{
+    padding:15px;
+}
+
+.newbie-task{
+    padding:15px;
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.draft{
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.wait{
+    border:1px solid;
+    padding:90px;
+    text-align:center;
+    vertical-align:middle;
+    margin-bottom:8px;
 }
