@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{24
 		Database\dbo.TProfile.sql = Database\dbo.TProfile.sql
 		Database\dbo.TRegister.sql = Database\dbo.TRegister.sql
 		Database\SQLQuery1.sql = Database\SQLQuery1.sql
+		Database\创建数据库.sql = Database\创建数据库.sql
+		Database\删除更新sql.sql = Database\删除更新sql.sql
 	EndProjectSection
 EndProject
 Global
