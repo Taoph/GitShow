@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{24BB8BDB-A33E-47AF-8E42-D6D5E5A11A7D}"
 	ProjectSection(SolutionItems) = preProject
 		Database\5-单表查找.sql = Database\5-单表查找.sql
+		Database\6-单表进阶操作.sql = Database\6-单表进阶操作.sql
 		Database\dbo.ProblemKeyword.sql = Database\dbo.ProblemKeyword.sql
 		Database\dbo.TCredit.sql = Database\dbo.TCredit.sql
 		Database\dbo.TProblem.sql = Database\dbo.TProblem.sql
