@@ -40,7 +40,8 @@ add  HigherKey Nvarchar(50) null
 Insert into TKeyword Values(N'IT技术',null),(N'编程语言','IT技术'),(N'SQL',N'编程语言'),(N'C#',N'编程语言')
 
 SELECT k.Keyword Keyword,hk.Keyword hKeyword,hhk.Keyword hhKeyword
-from TKeyword k  join TKeyword hk on k.HigherKey=hk.Keyword  left join TKeyword hhk on hk.HigherKey=hhk.Keyword 
+from TKeyword k  join TKeyword hk on k.HigherKey=hk.Keyword  left join TKeyword hhk on hk.HigherKey=hhk.Keyword  
+
 
 --5
 Create table TSuggest
