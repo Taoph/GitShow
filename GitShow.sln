@@ -24,10 +24,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{24
 		Database\删除更新sql.sql = Database\删除更新sql.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JAVAScript", "JAVAScript", "{81210FAD-9C9F-4B3B-B376-57F09EDAB9B8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JAVAScript", "JAVAScript", "{7838C01D-5607-482D-9E65-6B0ACB147E93}"
 	ProjectSection(SolutionItems) = preProject
-		入门1.html = 入门1.html
-		函数2.html = 函数2.html
+		作用域3.html = 作用域3.html
+		JAVAScript\入门1.html = JAVAScript\入门1.html
+		JAVAScript\函数2.html = JAVAScript\函数2.html
 	EndProjectSection
 EndProject
 Global

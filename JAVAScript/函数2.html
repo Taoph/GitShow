@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+   <script>
+       //1.将源栈同学姓名/昵称装入数组，再根据该数组输出共有多少同学
+       var arr = ["小明", "芳芳", "二狗子"];
+       document.write("<p>学生人数为:" + arr.length+"</p>");
+       //2.在上述数组头部加上小鱼老师，末尾加上大飞哥
+       arr.push("大飞哥");
+       arr.unshift("小于老师");
+       console.log(arr);
+       //3.如果一个数只能被1和它自己整除，这个数就被称之为“素数”。请找出100以内的所有素数。然后封装成一个函数findPrime(max)，可以返回max以内的所有素数。
+       function findPrime(max) {
+           var prime = new Array();
+           for (var i = 2; i < max; i++) {
+               var isPrime = true;
+               for (var j = 2; j < i; j++) {
+                   if (i % j === 0) {
+                       isPrime = false;
+                       break;
+                   }
+               }
+               if (isPrime) {
+                   prime.push(i);
+               }
+           }
+           return prime;
+       }
+       var prime = findPrime(100);
+       document.write("<p>100 以内所有素数:"+prime+"</p>");
+       //4.建立一个函数getMaxNumber()，可以接受任意多各种类型（整数、小数、正数、负数、字符串、布尔值等）的参数，并找出里面最大的数（忽略其他类型）
+       var max = getMaxNumber('小米', 2, 45, 33, 8, true, 2.345, "")
+       document.write("<p>最大值为："+max+"</p>")
+       function getMaxNumber() {
+           var max = undefined
+           for (var i = 0; i < arguments.length; i++) {
+               if (!isNaN(arguments[i])) {
+                   max = max == undefined ? arguments[i] : (arguments[i] > max ? arguments[i] : max);
+               }
+           }
+           return max;
+       }
+       let nums = ["小米", "哈哈哈哈", "小米",20,true, "",null,undefined];
+       let result = distinct(nums);
+       document.write("<p>" + result + "</p>");
+       //5.删除一个数组里面重复的元素
+       function distinct(array) {
+           let result = [];
+           let obj = {};
+           for (let i of array) {
+               if (!obj[i]) {
+                   obj[i] = 1;
+                   result.push(i);
+               }
+           }
+           return result;
+       }
+       //6.使用JavaScript内置字符串函数，处理 “‘源栈’：飞哥小班教学，线下免费收看” ：“飞哥”改成“大神”，“线下”改成“线上”。
+       let str = "源栈:飞哥小班教学，线下免费收看";
+       str=str.replace("飞哥", "大神").replace("线下", "线上"); 
+       document.write("<p>" + str + "</p>");
+       //7.将数组['why','gIT','vs2019','community','VERSION']规范化，所有字符串：
+       //      首字母大写开头，其他字母小写
+       //      截去超过6个字符的部分，如'community'将变成'Commun'
+       const arr6 = ['why', 'gIT', 'vs2019', 'community', 'VERSION']
+       let result6 = [];
+       for (let val of arr6) {
+           let s = (val.substring(0, 1).toUpperCase() + val.substring(1).toLowerCase());
+           result6.push(s);
+       }
+       document.write(result6);
+       //8.创建一个函数getRandomArray(length, max)，能返回一个长度不大于length，每个元素值不大于100随机整数数组。
+       document.write("<p>"+getRandomArray(8, 111)+"</p>");
+       function getRandomArray(length, max) {
+           let arr = [];
+           for (let i = 0; i < length; i++) {
+               let val = Math.floor(Math.random() * max);
+               arr.push(val);
+           }
+           return arr;
+       }
+       //9.不使用JavaScript内置函数，将一个字符串顺序颠倒，比如：'hello,yuanzhan' 变成 'nahznauy,olleh'。
+       const str9 = "hello,yuanzhan";
+       let result9 = "";
+       for (let i = str9.length - 1; i > -1;i--) {
+           result9+=str9[i];
+       }
+       document.write("<p>" + result9 + "</p>");
+       //10.统计出这段文字中有多少个单词：
+       const str10 = "There are two ways to create a RegExp object : a literal notation and a constructor. To indicate strings , the parameters to the literal notation do not use quotation marks while the parameters to the constructor function do use quotation-marks. So the following expressions create the same regular expression";
+       const regex = /[a-zA-Z]/;
+       let count = 0;
+       for (let i of str10) {
+           if (regex.test(i)) count++;
+
+       }
+       document.write(count);
+   </script>
+</body>
+</html>

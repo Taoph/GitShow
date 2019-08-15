@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+ 
+    <script>        
+        //在函数yz.fei.get986()中嵌入不带参数的函数has9()/has8()/has6()，并调用上述函数，找出10000以内有多少个数字包含：9或者8或者6。
+        var yz = window.yz || {};
+        yz.fei = window.yz.fei || {};
+        yz.fei.get986 = function (max) {
+            let count = 0;
+            let arr = [];
+            has6();
+            has8();
+            has9();
+            return count;
+            function has6() {                
+                for (let i = 0; i < max;i++) {
+                    if (i.toString().includes("6") && !arr.includes(i)) {
+                        count++;
+                        arr.push(i);
+                    }
+                }
+            }
+            function has8() {
+                for (let i = 0; i < max; i++) {
+                    if (i.toString().includes("86") && !arr.includes(i)) {
+                        count++;
+                        arr.push(i);
+                    }
+                }
+            }
+            function has9() {
+                for (let i = 0; i < max; i++) {
+                    if (i.toString().includes("9") && !arr.includes(i)) {
+                        count++;
+                        arr.push(i);
+                    }
+                }
+            }
+        }
+        let num = yz.fei.get986(10000);
+        document.write(num);
+    </script>
+</body>
+</html>
