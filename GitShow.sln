@@ -26,9 +26,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{24
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JAVAScript", "JAVAScript", "{7838C01D-5607-482D-9E65-6B0ACB147E93}"
 	ProjectSection(SolutionItems) = preProject
+		BOM5.html = BOM5.html
 		作用域3.html = 作用域3.html
 		JAVAScript\入门1.html = JAVAScript\入门1.html
 		JAVAScript\函数2.html = JAVAScript\函数2.html
+		闭包4.html = 闭包4.html
 	EndProjectSection
 EndProject
 Global

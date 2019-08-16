@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  <script>
+      //作业1：在函数student()中声明了函数域变量name、age和female，使用闭包机制，将其暴露到函数外部
+      (function student() {
+          var name = "飞哥", age = -1, female = false;
+          return function () {
+              console.log(name);
+              console.log(age);
+              console.log(female);
+          }
+      })()();
+      //作业2：解释以下代码运行结果：（ condition ? <statement when true> : <statement when false>）
+      function foo(x) {
+          var tmp = 3;
+          return function (y) {
+              x = y ? x + 1 : 1;
+              console.log(x + y + tmp);
+          }
+      }
+
+      var bar = foo(1);
+      //或者：var bar = foo(1);
+      //或者：var bar = foo(0);
+
+      bar(10);
+      //结果为15，执行函数foo(1)返回函数给全局变量bar,给bar传入参数10执行函数，得到值
+
+      //作业3
+      function buildList(list) {
+          var result = [];
+          for (var i = 0; i < list.length; i++) {
+              result.push(function () {
+                  console.log('item' + i + ': ' + list[i])
+              });
+          }
+          return result;
+      }
+
+      (function () {
+          var fnlist = buildList([1, 2, 3]);
+          for (var i = 0; i < fnlist.length; i++) {
+              fnlist[i]();
+          }
+      })();
+  </script>
+</body>
+</html>
