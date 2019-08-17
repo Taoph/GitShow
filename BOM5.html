@@ -5,16 +5,47 @@
     <meta charset="utf-8" />
     <title></title>
     <script>
-	    window.open("https://www.baidu.com/","_self");
-        function delayCall(name) {
-            
-            function greet() {
-                name = "嘻嘻";
-                console.log('Hello,'+name);
+        //完成猜数字的游戏;
+        var bStart=window.confirm(`        浏览器生成一个不大于1000的随机正整数,用户输入猜测   
+        如果用户没有猜对,浏览器比较后告知结果:'大了'或者'小了'
+        如果用户:
+            只用了不到6次就猜到, 弹出: 碉堡了!     
+            只用了不到8次就猜到，弹出：666！      
+            用了8-10次猜到，弹出：猜到了
+            用了10次都还没猜对，弹出：^(*￣(oo)￣)^
+            点击'确认'，开始游戏`);
+
+        if (bStart) {
+            var value = Math.floor(Math.random() * 1000);
+            var result ;
+            var count = 0;
+            var str = "请输值:";
+            while (result != value) {
+                count++;
+                if (count > 10) break;
+                result = window.prompt(str);
+                if (result == null) break;
+                if (result > value) str = "大了,请重新输入：";
+                else str = "小了,请重新输入：";
             }
-            setTimeout(greet, 2000);
+            if (result != null) {
+                if (count < 6) alert("碉堡了！");
+                else if (count < 8) alert("666!");
+                else if (count < 11) alert("猜对了");
+                else alert("^(*￣(oo)￣)^");
+            }           
         }
-        delayCall("源栈");
+        //使用setTimeout() （不是setInterval() ）实现每隔1秒钟依次显示：第n周，源栈同学random人。（n逐次递增，random随机）
+        (function roundDelay() {
+            var count = 0;
+            return function round() {
+                if (count < 50) {
+                    count++;
+                    document.write('<p>第' + count + '周，源栈同学' + Math.ceil(Math.random() * 100) + '人。</p>');
+                    setTimeout(round, 1000);
+                }
+            }
+        })()();       
     </script>
 </head>
 <body>
