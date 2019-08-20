@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1 id="h1">Hello World</h1>
+    <script>
+        //实现铃铛（没有学bootstrap的同学用文字代替）闪烁效果
+        function changeColor() {
+            //var color = ['red','blue', 'green', 'balck', 'grey'];
+            var color = ['lightblue', 'darkblue'];
+            document.getElementById("h1").style.color = color[parseInt(Math.random() * color.length)];
+        }
+        function twinkle() {
+            if (document.getElementById("h1").style.visibility == "hidden")
+                document.getElementById("h1").style.visibility = "visible";
+            else
+                document.getElementById("h1").style.visibility = "hidden";
+        }
+        setInterval(twinkle, 500);
+    </script>
+</body>
+</html>
